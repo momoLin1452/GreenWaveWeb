@@ -1,0 +1,100 @@
+$color_Green_Wave_BG:#E8DAB2;
+$color_nav_font:#1F7785;
+$color_hr_green:#0E4E57;
+$color_hr_white:white;
+*{
+
+  font-family: 微軟正黑體;
+  font-weight: 900;
+
+}
+h1{
+
+  font-size: 25px;
+
+}
+h2{
+
+  font-size: 20px;
+
+}
+h3{
+
+  font-size: 15px;
+
+}
+h4{
+
+  font-size: 12px;
+
+}
+p{
+
+  font-size: 13px;
+
+}
+
+nav.navbar.navbar-default,.dropdown-menu>li>a{
+
+  background-color: $color_Green_Wave_BG !important;
+
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a,.dropdown-menu>li>a{
+
+color:$color_nav_font !important;
+
+}
+
+.col-md-12.inn p{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.col-md-12.inn b{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+
+//
+hr.green{
+
+  border: $color_hr_green 3px solid;
+  max-width: 50px;
+
+
+}
+hr.white{
+
+  border: $color_hr_white 3px solid;
+  max-width: 50px;
+
+
+}
+.navbar-default .navbar-toggle .icon-bar{
+
+background-color:$color_nav_font !important;
+
+}
+.navbar-default .navbar-toggle{
+
+
+
+border-color: $color_nav_font !important;
+
+}
+
+
+.col-md-12.GreenWave.manage{
+
+  background-color:$color_nav_font;
+  color: $color_hr_white;
+
+}
+
+p{
+
+  padding: 20px;
+
+}

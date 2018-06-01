@@ -1,0 +1,298 @@
+$color_btn_yellow:#E8DAB2;
+$color_btn_black:black;
+$color_btn_green:#0E4E57;
+$color_btn_white: white;
+$color_btn_lightyellow:#FFF0C4;
+
+//置中設定
+@mixin ab_center{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+*{
+
+    
+    // border: solid 1px black;
+    
+
+}
+
+navbar-header col-md-4{
+
+    display: inline-block;
+
+}
+
+section{
+
+    padding: 60px 0px;
+    position: relative;
+
+}
+
+.carousel{
+    img{
+      
+      display: block;
+      margin: auto;
+      
+    }
+    
+    
+  }
+//強制幻燈片沒有左右陰影
+.carousel-control.left,.carousel-control.right{
+
+    background-image:none !important;
+
+}
+.col-md-4.left{
+    
+    height: 350px;
+    .greenwave.img{
+        background-image: url(http://bpic.588ku.com/element_origin_min_pic/17/04/06/2332400dccf1359e5dd5971efaf9bc36.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    
+}
+
+//故事右邊
+.col-md-8.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    //修改故事的文字間距行距
+    p{
+       
+        display: inline-block;
+        letter-spacing: 5px;
+        // line-height:30px;
+    }
+
+}
+.font{
+    //修改經營的文字間距行距
+    p{
+        padding: 40px;
+        letter-spacing: 5px;
+        line-height:20px;
+
+    }
+
+}
+.caption{
+    
+    //修改品牌的文字間距行距
+    p{
+        padding: 0px;
+        letter-spacing: 3px;
+        line-height:23px;
+        margin: 0px;
+        
+
+    }
+}
+//修改品牌資訊外距
+.thumbnail .caption{
+
+    padding: 0px !important;
+}
+
+section{
+
+    margin: 20px 0px;
+    text-align:center;
+}
+
+
+//放logo圖
+.img{
+    margin: 5px 0px 0px 10px;
+    background-image: url(../img/logo.jpg);
+    background-size: 46px 45px;
+    background-repeat: no-repeat;
+    height: 50px;
+    mix-blend-mode: multiply;
+  }
+  
+  .navbar-brand{
+  
+    padding-top:10px !important;
+    padding-left:50px !important;  
+  
+  }
+
+  section.col-md-12.GreenWave.manage{
+    
+    img{
+        position: relative;
+        padding-top:10%;
+        padding-bottom: 10%;
+        width: 100%;
+        
+    }
+
+  }
+
+//品牌項目
+  section.col-md-12.GreeWave.brands{
+      .caption{
+          .font{
+
+            font-family: 微軟正黑體;
+            font-weight: 800;
+            color:$color_btn_green;
+
+          }
+        .btn-primary{
+            position: a;
+            background-color: $color_btn_yellow;
+            border-color: $color_btn_yellow;
+            color: $color_btn_black;
+            font-family: 微軟正黑體;
+            font-weight: 900;
+            &:hover{
+                background-color: $color_btn_green;
+                border-color: $color_btn_green;
+                color:$color_btn_white;
+                
+            }
+
+        }
+        .btn{
+            left: 50%;
+            top:80%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+    
+        }
+
+      }
+    
+    .thumbnail{
+        height: 400px;
+        .fixed{
+            height: 110px;
+            img{
+
+                width: 100%;
+                height: 100%;
+    
+    
+    
+    
+            }
+            
+
+        }
+        
+
+
+    }
+
+
+   }
+
+
+
+   //聯絡我們
+section.col-md-12.GreeWave.contact{
+    padding: 0;
+    margin: 0;
+    .col-md-5.right{
+
+        p{
+       
+            display: inline-block;
+            letter-spacing: 2px;
+            line-height:20px;
+        }
+        text-align:center;
+        color: $color_btn_white;
+
+    }
+    h5{
+        font-weight: 800 !important;
+       }
+        text-align:left;
+        background-color:$color_btn_green;
+        color: $color_btn_black;
+        font-family: 微軟正黑體;
+        font-weight: 800 !important;
+        //超出就卡掉
+        overflow: hidden;
+        .col-md-7{
+            .mails{
+                width: 57%;
+                // height: 400px;
+                .mailcover{
+                    //呼叫ab_center
+                    
+                    @include ab_center;
+                    top: 80%;
+                    right: 10%;
+                    transform: rotate(5deg) scale(2) translate(-50%,-50%);
+                    img.imgletter{
+                        
+                        width: 113%;
+                    }
+                }
+                .mailbody{
+                    // transform: rotate(5deg);
+                    box-shadow: 0px 0px 15px 3px rgba($color: #000000, $alpha: 0.5);
+                    width: 177%;
+                    margin: 20px;
+                    padding: 15px;
+                    background-color:$color_btn_lightyellow;
+                    // background-color: transparent;
+                
+                    .col-md-5.col-sm-5.left{
+                        // width:40%;
+                        h5{
+                            margin-top: 5px;
+                            // width:193%;
+
+                        }
+
+                    }
+                
+                }
+    
+            }
+        }
+    }
+select,input,textarea{
+        //排列
+        display: block;
+        //輸入框變透明
+        // background-color: transparent;
+        width: 100%;
+
+}
+textarea{
+    height: 250px;
+    width: 100%;
+   }
+
+.footer.col-md-12.col-sm-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$color_btn_lightyellow;
+    .img{
+        
+        display: inline;
+    }
+    
+}
